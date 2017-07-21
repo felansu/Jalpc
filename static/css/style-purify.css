@@ -1154,6 +1154,11 @@ a:focus,a:hover {
   margin-top: 5px;
 }
 
+.big-icon {
+  font-size: 160px!important;
+  color: #e5e6e7;
+}
+
 .link-block,.nav.navbar-top-links .link-block a {
   font-size: 12px;
 }
@@ -2600,6 +2605,14 @@ body.landing-page {
   padding-bottom: 90px;
   background-color: #3385FF;
   background-image: url(../img/landing/avatar_all.png);
+}
+
+.landing-page .big-icon {
+  font-size: 56px!important;
+}
+
+.landing-page .features .big-icon {
+  color: #3385FF!important;
 }
 
 .landing-page .contact {
