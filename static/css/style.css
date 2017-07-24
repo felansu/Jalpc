@@ -7308,9 +7308,13 @@ body.body-small .vote-icon {
 }
 
 body.landing-page {
-    color: #676a6c;
+    color: #3385ff;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
-    background-color: #fff
+    background-color: #272727;
+}
+
+#skills {
+    background-color: #ffffff;
 }
 
 .landing-page span.navy {
