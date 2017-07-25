@@ -70,20 +70,20 @@
 				toggleSearch(true);
 			});
 
-			$.getJSON("{{ ' / search / cb - search.json' | prepend: site.baseurl }}")
-                .done(function (data) {
-				if (data.code === 0) {
-					$("#search-content").typeahead({
-						source: data.data,
-						displayText: function (item) {
-							return item.title;
-						},
-						afterSelect: function (item) {
-							window.location.href = item.url;
-						}
-					});
-				}
-			});
+			$.getJSON("{{ '/search/cb-search.json' | prepend: site.baseurl }}")
+				.done(function (data) {
+					if (data.code === 0) {
+						$("#search-content").typeahead({
+							source: data.data,
+							displayText: function (item) {
+								return item.title;
+							},
+							afterSelect: function (item) {
+								window.location.href = item.url;
+							}
+						});
+					}
+				});
 		});
 		$(function () {
 			$("pre").css('display', 'block');
