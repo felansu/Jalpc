@@ -888,6 +888,10 @@ label.error {
   }
 }
 
+.slick-next:before {
+  color: #3385FF!important;
+}
+
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f4050;
@@ -995,6 +999,10 @@ a:focus,a:hover {
 .border-right {
   border-left: none;
   border-right: 1px solid #e7eaec;
+}
+
+.full-width {
+  width: 100%!important;
 }
 
 .link-block {
@@ -1166,6 +1174,10 @@ a.close-canvas-menu:hover {
 
 .canvas-menu .close-canvas-menu {
   display: block;
+}
+
+.full-height {
+  height: 100%;
 }
 
 .p-xs {
@@ -1535,7 +1547,7 @@ ul.clear-list:first-child {
   color: #676a6c;
 }
 
-.product-name,.vote-icon,.vote-title {
+.vote-icon,.vote-title {
   display: block;
 }
 
@@ -1643,36 +1655,8 @@ ul.clear-list:first-child {
   padding: 40px;
 }
 
-.product-box {
-  padding: 0;
-  border: 1px solid #e7eaec;
-}
-
-.product-box.active,.product-box:hover {
-  border: 1px solid transparent;
-  -webkit-box-shadow: 0 3px 7px 0 #a8a8a8;
-  -moz-box-shadow: 0 3px 7px 0 #a8a8a8;
-  box-shadow: 0 3px 7px 0 #a8a8a8;
-}
-
-.product-desc {
-  padding: 20px;
-  position: relative;
-}
-
 .vote-item {
   border-top: 1px solid #e7eaec;
-}
-
-.product-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: #676a6c;
-  margin: 2px 0 5px;
-}
-
-.product-name:focus,.product-name:hover {
-  color: #3385FF;
 }
 
 .social-feed-box {
