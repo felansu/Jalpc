@@ -474,6 +474,14 @@ body.canvas-menu .nav-header {
   color: #8B91A0;
 }
 
+.elements-list a {
+  color: inherit;
+}
+
+.elements-list li.active {
+  transition: none;
+}
+
 .h-150 {
   min-height: 150px;
 }

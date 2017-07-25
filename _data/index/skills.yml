@@ -1,4 +1,4 @@
 label: Ability
 id : cs
-aspects: Git, Svn, AngularJS, Angular2, JavaEE, .Net, Python, Spark, Gulp, Grails, Hive, Rasa-NLU, React, JavaScript, Machine Learning, Intellij Idea, SQL, Hibernate, Mongo, Ionic, PHP
-percentage: 80, 75, 90, 75, 82, 30,65, 70, 80, 75, 45, 68, 60, 75, 45, 92, 80, 65, 78, 64, 30
+aspects: Git, AngularJS, Angular2, JavaEE, Python, Spark, Gulp, Grails, Hive, Rasa-NLU, React, JavaScript, Machine Learning, SQL, Hibernate, Mongo, Ionic
+percentage: 80, 90, 75, 82, 65, 70, 80, 75, 45, 68, 60, 75, 45, 80, 65, 78, 64

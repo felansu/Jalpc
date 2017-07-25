@@ -29,13 +29,18 @@
             type: 'radar',
             data: data,
             options: {
+	            elements: {
+	            	line: {
+			            tension: 0.1
+		            }
+	            },
                 scale: {
                     responsive: true,
                     ticks: {min: 0, max: 100},
-                    lineArc: false,
-                    pointLabels: {fontSize: 14},
+                    lineArc: true,
+                    pointLabels: {fontSize: 14}
                 },
-                legend: {display: false},
+                legend: {display: false}
             }
         });
         </script>
