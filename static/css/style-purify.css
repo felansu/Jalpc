@@ -997,10 +997,6 @@ a:focus,a:hover {
   border-right: 1px solid #e7eaec;
 }
 
-.full-width {
-  width: 100%!important;
-}
-
 .link-block {
   padding: 10px;
 }
@@ -1170,10 +1166,6 @@ a.close-canvas-menu:hover {
 
 .canvas-menu .close-canvas-menu {
   display: block;
-}
-
-.full-height {
-  height: 100%;
 }
 
 .p-xs {
@@ -2124,6 +2116,11 @@ body.landing-page {
   background-color: #ffffff;
 }
 
+#about-me {
+  margin-top: 90px;
+  background-color: #272727;
+}
+
 .landing-page span.navy {
   color: #3385FF;
 }
@@ -2155,7 +2152,7 @@ body.landing-page {
 .landing-page .navy-line {
   width: 60px;
   height: 1px;
-  margin: 60px auto 0;
+  margin: 20px auto 0;
   border-bottom: 2px solid #3385FF;
 }
 
@@ -2308,10 +2305,6 @@ body.landing-page {
   top: 150px;
 }
 
-.landing-page .features-block,.landing-page .features-text {
-  margin-top: 40px;
-}
-
 .landing-page .features small {
   color: #3385FF;
 }
@@ -2327,7 +2320,6 @@ body.landing-page {
 }
 
 .landing-page .navy-section {
-  margin-top: 60px;
   background: #3385FF;
   color: #fff;
   padding: 20px 0;
@@ -2335,7 +2327,6 @@ body.landing-page {
 
 .landing-page .gray-section {
   background: #f4f4f4;
-  margin-top: 60px;
 }
 
 .landing-page .team-member {
@@ -2389,7 +2380,6 @@ body.landing-page {
   background-image: url(../img/landing/word_map.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin-top: 60px;
 }
 
 .landing-page section.timeline {
