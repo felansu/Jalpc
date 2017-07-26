@@ -54,7 +54,7 @@ h3,h4,h5 {
   color: #fff;
 }
 
-.nav.navbar-top-links>li>a:focus,.nav.navbar-top-links>li>a:hover,.navbar-default {
+.navbar-default {
   background-color: transparent;
 }
 
@@ -68,23 +68,6 @@ h3,h4,h5 {
 
 .navbar-default {
   border-color: #2f4050;
-}
-
-.navbar-top-links li {
-  display: inline-block;
-}
-
-.navbar-top-links li:last-child {
-  margin-right: 40px;
-}
-
-.body-small .navbar-top-links li:last-child {
-  margin-right: 0;
-}
-
-.navbar-top-links li a {
-  padding: 20px 10px;
-  min-height: 50px;
 }
 
 .dd-item>button,code {
@@ -115,10 +98,6 @@ h3,h4,h5 {
   padding: 0;
   width: 200px;
   display: inline-table;
-}
-
-.nav.navbar-top-links a {
-  font-size: 14px;
 }
 
 .navbar-form-custom .form-control {
@@ -240,10 +219,6 @@ body.canvas-menu .nav-header {
   background-image: none;
 }
 
-.top-navigation .navbar-top-links li:last-child {
-  margin-right: 0;
-}
-
 .canvas-menu #page-wrapper {
   margin: 0;
 }
@@ -298,22 +273,6 @@ body.canvas-menu .nav-header {
 
 .btn {
   border-radius: 3px;
-}
-
-.btn-primary.btn-outline {
-  color: #3385FF;
-}
-
-.btn-success.btn-outline {
-  color: #1c84c6;
-}
-
-.btn-info.btn-outline {
-  color: #23c6c8;
-}
-
-.btn-info.btn-outline:hover,.btn-primary.btn-outline:hover,.btn-success.btn-outline:hover {
-  color: #fff;
 }
 
 .btn-primary {
@@ -420,16 +379,6 @@ body.canvas-menu .nav-header {
 
 .form-control,.form-control:focus,.has-error .form-control:focus,.has-success .form-control:focus,.navbar-collapse,.navbar-form,.navbar-form-custom .form-control:focus,.navbar-form-custom .form-control:hover,.panel {
   box-shadow: none;
-}
-
-.btn-outline {
-  color: inherit;
-  background-color: transparent;
-  transition: all .5s;
-}
-
-.btn-rounded {
-  border-radius: 50px;
 }
 
 .label {
@@ -801,7 +750,7 @@ label.error {
 .vertical-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #fff;
+  background: #272727;
   border-radius: .25em;
   padding: 1em;
 }
@@ -863,7 +812,7 @@ label.error {
   .center-orientation .vertical-timeline-content::before {
     top: 24px;
     left: 100%;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #272727;
   }
 
   .center-orientation .vertical-timeline-content .btn {
@@ -886,7 +835,7 @@ label.error {
     top: 24px;
     left: auto;
     right: 100%;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #272727 transparent transparent;
   }
 
   .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
@@ -971,7 +920,7 @@ a:focus,a:hover {
   color: #e5e6e7;
 }
 
-.link-block,.nav.navbar-top-links .link-block a {
+.link-block {
   font-size: 12px;
 }
 
@@ -2104,15 +2053,6 @@ body.landing-page {
   background-color: #272727;
 }
 
-#skills {
-  background-color: #ffffff;
-}
-
-#about-me {
-  margin-top: 90px;
-  background-color: #272727;
-}
-
 .landing-page span.navy {
   color: #3385FF;
 }
@@ -2329,6 +2269,21 @@ body.landing-page {
   margin: auto;
 }
 
+.landing-page .skills {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.landing-page .projects {
+  height: 100%;
+}
+
+.landing-page .about {
+  margin-top: 10%;
+  background-color: #272727;
+  height: 100%;
+}
+
 .landing-page .social-icon a {
   background: #3385FF;
   color: #fff;
@@ -2353,13 +2308,6 @@ body.landing-page {
   font-size: 14px;
 }
 
-.landing-page .testimonials {
-  padding-top: 80px;
-  padding-bottom: 90px;
-  background-color: #3385FF;
-  background-image: url(../img/landing/avatar_all.png);
-}
-
 .landing-page .big-icon {
   font-size: 56px!important;
 }
@@ -2368,10 +2316,11 @@ body.landing-page {
   color: #3385FF!important;
 }
 
-.landing-page .contact {
+.landing-page .thanks {
   background-image: url(../img/landing/word_map.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  height: 92%;
 }
 
 .landing-page section.timeline {
@@ -2392,10 +2341,6 @@ body.landing-page {
   height: 42px;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.landing-page .btn-info.btn-outline:hover,.landing-page .btn-primary.btn-outline:hover,.landing-page .btn-success.btn-outline:hover {
-  color: #fff;
 }
 
 .landing-page .btn-primary,.landing-page .btn-primary.active,.landing-page .btn-primary:active,.landing-page .btn-primary:focus,.landing-page .btn-primary:hover {

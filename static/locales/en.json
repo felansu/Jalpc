@@ -20,6 +20,10 @@
     "company_c_job": "Automation Test Analyst",
     "company_c_skill": "junit javaee jenkins svn sonar"
   },
+  "thanks":{
+    "title": "Thanks for visit my site",
+    "view": "views"
+  },
 
   "website":{
     "title": "felansu's blog"
@@ -51,10 +55,6 @@
   },
   "blog":{
     "my_blog": "My Blog"
-  },
-  "link":{
-    "link": "Link",
-    "view": "views"
   }
 
 }

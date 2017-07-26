@@ -8,8 +8,8 @@ $(document).ready(function() {
       if (users.indexOf($(this).attr('user')) === -1) {
         users.push($(this).attr('user'))
       }
-  })
-  // console.log(1, users, repos)
+  });
+
   for (var i = 0; i < users.length; i++) {
     $.ajax({
     type: "GET",
@@ -22,8 +22,8 @@ $(document).ready(function() {
       for  (var i = 0; i < data.length; i++) {
         if (repos.indexOf(data[i].full_name) !== -1) {
           x = data[i].name;
-          $("div[repo='" + x + "']").children(".star").html('<i class="fa fa-star"></i> ' + data[i].stargazers_count)
-          $("div[repo='" + x + "']").children(".fork").html('<i class="fa fa-code-fork"></i> ' + data[i].forks_count)
+          $("div[repo='" + x + "']").children(".star").html('<i class="fa fa-star"></i> ' + data[i].stargazers_count);
+          $("div[repo='" + x + "']").children(".fork").html('<i class="fa fa-code-fork"></i> ' + data[i].forks_count);
         }
       }
     }

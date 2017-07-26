@@ -2956,24 +2956,6 @@ a.forum-item-title:hover {
     background: #e7eaec
 }
 
-.dark-timeline .vertical-timeline-content:before {
-    border-color: transparent #f5f5f5 transparent transparent
-}
-
-.dark-timeline.center-orientation .vertical-timeline-content:before {
-    border-color: transparent transparent transparent #f5f5f5
-}
-
-.dark-timeline .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before,
-.dark-timeline.center-orientation .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before {
-    border-color: transparent #f5f5f5 transparent transparent
-}
-
-.dark-timeline .vertical-timeline-content,
-.dark-timeline.center-orientation .vertical-timeline-content {
-    background: #f5f5f5
-}
-
 @media only screen and (min-width:1170px) {
     #vertical-timeline.center-orientation {
         margin-top: 3em;
@@ -2982,12 +2964,6 @@ a.forum-item-title:hover {
     #vertical-timeline.center-orientation:before {
         left: 50%;
         margin-left: -2px
-    }
-}
-
-@media only screen and (max-width:1170px) {
-    .center-orientation.dark-timeline .vertical-timeline-content:before {
-        border-color: transparent #f5f5f5 transparent transparent
     }
 }
 
@@ -3066,7 +3042,7 @@ a.forum-item-title:hover {
 .vertical-timeline-content {
     position: relative;
     margin-left: 60px;
-    background: #fff;
+    background: #272727;
     border-radius: .25em;
     padding: 1em
 }
@@ -3126,7 +3102,7 @@ a.forum-item-title:hover {
     .center-orientation .vertical-timeline-content::before {
         top: 24px;
         left: 100%;
-        border-color: transparent transparent transparent #fff
+        border-color: transparent transparent transparent #272727
     }
     .center-orientation .vertical-timeline-content .btn {
         float: left
@@ -3146,7 +3122,7 @@ a.forum-item-title:hover {
         top: 24px;
         left: auto;
         right: 100%;
-        border-color: transparent #fff transparent transparent
+        border-color: transparent #272727 transparent transparent
     }
     .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
         left: auto;
@@ -7313,15 +7289,6 @@ body.landing-page {
     background-color: #272727;
 }
 
-#skills {
-    background-color: #ffffff;
-}
-
-#about-me{
-    margin-top: 90px;
-    background-color: #272727;
-}
-
 .landing-page span.navy {
     color: #3385FF
 }
@@ -7664,6 +7631,21 @@ body.landing-page {
     margin: auto
 }
 
+.landing-page .skills {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.landing-page .projects {
+    height: 100%;
+}
+
+.landing-page .about {
+    margin-top: 10%;
+    background-color: #272727;
+    height: 100%;
+}
+
 .landing-page .social-icon a {
     background: #3385FF;
     color: #fff;
@@ -7741,10 +7723,11 @@ body.landing-page {
     color: #3385FF!important
 }
 
-.landing-page .contact {
+.landing-page .thanks {
     background-image: url(../img/landing/word_map.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    height: 92%;
 }
 
 .landing-page section.timeline {

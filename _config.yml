@@ -2,6 +2,7 @@
 
 # Website settings
 title: felansu
+blog: blog
 description: personal developer blog
 keywords: felansu,machine-learning,java,python,angular,data-science,big-data,hive,hadoop
 # baseurl: / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
@@ -23,11 +24,11 @@ author:  # change following line to your infomation.
   cv: https://felansu.github.io/cv/cv-br.pdf # A online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
-    - name: icon-apache
-    - name: fa-linux
+    - name: icon-hadoop
+    - name: icon-angular
   skill_icon2:
-    - name: fa-linux
-    - name: icon-apache
+    - name: icon-python
+    - name: icon-java
   desc: Introduce myself will be here.  # Describe yourself.
 
 # comment
@@ -41,7 +42,7 @@ ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get
 
 ## google optimize
 go:
-  id: GTM-NTMRNJP
+  id: GTM-PFTPV2Q
 
 ## growingIO
 gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
