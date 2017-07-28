@@ -393,17 +393,6 @@ body.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
     padding: 18px 0
 }
 
-.pace-done #page-wrapper,
-.pace-done .footer,
-.pace-done .nav-header,
-.pace-done .navbar-static-side,
-.pace-done li.active {
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s
-}
-
 .navbar-fixed-top {
     transition-duration: .4s;
     border-bottom: 1px solid #e7eaec!important;
@@ -1891,16 +1880,6 @@ div.dt-button-info {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
-}
-
-.pace .pace-progress {
-    background: #3385FF;
-    position: fixed;
-    z-index: 2040;
-    top: 0;
-    right: 100%;
-    width: 100%;
-    height: 2px
 }
 
 .widget {
@@ -7264,23 +7243,6 @@ body.body-small .vote-icon {
     40% {
         opacity: 1
     }
-}
-
-.landing-page.pace .pace-progress {
-    background: #fff;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    height: 2px;
-    -webkit-transition: width 1s;
-    -moz-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s
-}
-
-.pace-inactive {
-    display: none
 }
 
 body.landing-page {
