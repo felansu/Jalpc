@@ -13,6 +13,10 @@ permalink: /
 {% for section in site.data.landing %}
 {% assign loopindex = forloop.index | modulo: 2 %}
 <section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}">
-  {% include sections/{{section.tpl}} %}
+
+    {% if section.id != 'blog' %}
+    {% include sections/{{section.tpl}} %}
+    {% endif %}
+
 </section>
 {% endfor %}

@@ -72,7 +72,6 @@ h5 {
     font-weight: 600
 }
 
-
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -7642,6 +7641,7 @@ body.landing-page {
 }
 
 .landing-page .thanks {
+    background-color: #272727;
 }
 
 .landing-page .social-icon a {

@@ -35,6 +35,18 @@ h3,h4,h5 {
   font-weight: 600;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(51, 133, 255);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
 .nav > li > a {
   color: #a7b1c2;
   font-weight: 600;
@@ -2287,7 +2299,9 @@ body.landing-page {
   height: 46em;
 }
 
-
+.landing-page .thanks {
+  background-color: #272727;
+}
 
 .landing-page .social-icon a {
   background: #3385FF;
@@ -2453,16 +2467,4 @@ body.landing-page {
     padding: 9px 10px;
     border: none;
   }
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(51, 133, 255);
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255);
 }
