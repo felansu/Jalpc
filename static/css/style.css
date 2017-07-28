@@ -6170,10 +6170,6 @@ table.shoping-cart-table tr td:last-child {
     border-bottom: 1px solid #e7eaec
 }
 
-.vote-item:hover {
-    background: #fbfbfb
-}
-
 .vote-actions {
     float: left;
     width: 30px;
@@ -7941,11 +7937,30 @@ body.rtls .timeline-item .date i {
     }
 }
 
-
 body.blog-page {
     font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 
-.blog-page .blog-content{
+.blog-page .blog-content {
     padding-top: 6em;
+}
+
+.blog-page .blog-content .blog-item {
+    border: black 1px;
+    padding: 20px 25px;
+    border-top: 1px solid #ffffff;
+    transition: 1s ease;
+}
+
+.blog-page .blog-content .blog-item:hover {
+    color: gold;
+    background: #fbfbfb
+}
+
+.vote-item:hover {
+    background: #fbfbfb;
+}
+
+.blog-page .blog-content .blog-item:last-child {
+    border-bottom: 1px solid #e7eaec;
 }
