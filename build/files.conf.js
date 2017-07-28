@@ -48,8 +48,7 @@ module.exports = {
         prefix: 'jPage-',
         type: 'js',
         list: [
-            'static/js/jPages.js',
-            'static/js/js.js'
+            'static/js/jPages.js'
         ]
     }, {
         name: 'all pages',

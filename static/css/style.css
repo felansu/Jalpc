@@ -1,5 +1,6 @@
 @import url(./open_sans.min.css);
 @import url(./roboto.min.css);
+
 .animation-text-box p,
 .faq-item .tag-item,
 .file-manager h5,
@@ -71,39 +72,52 @@ h5 {
     font-weight: 600
 }
 
-.nav>li>a {
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(51, 133, 255);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.nav > li > a {
     color: #a7b1c2;
     font-weight: 600;
     padding: 14px 20px 14px 25px
 }
 
-.nav.navbar-right>li>a {
+.nav.navbar-right > li > a {
     color: #999c9e
 }
 
-.nav>li.active>a {
+.nav > li.active > a {
     color: #fff
 }
 
-.navbar-default .nav>li>a:focus,
-.navbar-default .nav>li>a:hover {
+.navbar-default .nav > li > a:focus,
+.navbar-default .nav > li > a:hover {
     background-color: #293846;
     color: #fff
 }
 
-.nav .open>a,
-.nav .open>a:focus,
-.nav .open>a:hover {
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
     background: #fff
 }
 
-.nav.navbar-top-links>li>a:focus,
-.nav.navbar-top-links>li>a:hover,
+.nav.navbar-top-links > li > a:focus,
+.nav.navbar-top-links > li > a:hover,
 .navbar-default {
     background-color: transparent
 }
 
-.nav>li>a i {
+.nav > li > a i {
     margin-right: 6px
 }
 
@@ -146,7 +160,7 @@ h5 {
     z-index: 1000
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
     border-radius: 3px;
     color: inherit;
     line-height: 25px;
@@ -155,7 +169,7 @@ h5 {
     font-weight: 400
 }
 
-.dropdown-menu>li>a.font-bold,
+.dropdown-menu > li > a.font-bold,
 .logo-element {
     font-weight: 600
 }
@@ -177,7 +191,7 @@ h5 {
     white-space: normal
 }
 
-.dd-item>button,
+.dd-item > button,
 .fc-button,
 .jqstooltip,
 code {
@@ -227,17 +241,17 @@ code {
     background: url(patterns/header-profile.png) no-repeat
 }
 
-.nav>li.active {
+.nav > li.active {
     border-left: 4px solid #3385FF;
     background: #293846
 }
 
-.nav.nav-second-level>li.active {
+.nav.nav-second-level > li.active {
     border: none
 }
 
 .nav.nav-second-level.collapse[style] {
-    height: auto!important
+    height: auto !important
 }
 
 .nav-header a {
@@ -296,13 +310,13 @@ code {
     content: "\f104"
 }
 
-.active>a>.fa.arrow:before {
+.active > a > .fa.arrow:before {
     content: "\f107"
 }
 
 .nav-second-level li,
 .nav-third-level li {
-    border-bottom: none!important
+    border-bottom: none !important
 }
 
 .nav-second-level li a {
@@ -317,15 +331,15 @@ code {
     margin-bottom: 10px
 }
 
-.mini-navbar .nav li:focus>.nav-second-level,
-body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second-level {
+.mini-navbar .nav li:focus > .nav-second-level,
+body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-second-level {
     display: block;
     border-radius: 0 2px 2px 0;
     min-width: 140px;
     height: auto
 }
 
-body.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
+body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
     font-size: 12px;
     border-radius: 3px
 }
@@ -361,7 +375,7 @@ body.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
 }
 
 .navbar-default .special_link a:hover {
-    background: #3385FF!important;
+    background: #3385FF !important;
     color: #fff
 }
 
@@ -376,7 +390,7 @@ body.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
 }
 
 .navbar-default .landing_link a:hover {
-    background: #3385FF!important;
+    background: #3385FF !important;
     color: #fff
 }
 
@@ -395,7 +409,7 @@ body.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
 
 .navbar-fixed-top {
     transition-duration: .4s;
-    border-bottom: 1px solid #e7eaec!important;
+    border-bottom: 1px solid #e7eaec !important;
     z-index: 2030
 }
 
@@ -461,7 +475,7 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav-second-level {
     display: none
 }
 
-body.mini-navbar .navbar-default .nav>li>a {
+body.mini-navbar .navbar-default .nav > li > a {
     font-size: 16px
 }
 
@@ -488,7 +502,7 @@ body.mini-navbar #page-wrapper {
 
 body.canvas-menu.mini-navbar .footer,
 body.fixed-sidebar.mini-navbar .footer {
-    margin: 0!important
+    margin: 0 !important
 }
 
 body.canvas-menu.mini-navbar #page-wrapper,
@@ -517,18 +531,18 @@ body.body-small.fixed-sidebar.mini-navbar .navbar-static-side {
     width: 220px
 }
 
-.canvas-menu.mini-navbar .nav li:focus>.nav-second-level,
-.fixed-sidebar.mini-navbar .nav li:focus>.nav-second-level {
+.canvas-menu.mini-navbar .nav li:focus > .nav-second-level,
+.fixed-sidebar.mini-navbar .nav li:focus > .nav-second-level {
     display: block;
     height: auto
 }
 
-body.fixed-sidebar.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
+body.fixed-sidebar.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
     font-size: 12px;
     border-radius: 3px
 }
 
-body.canvas-menu.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
+body.canvas-menu.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
     font-size: 13px;
     border-radius: 3px
 }
@@ -546,8 +560,8 @@ body.canvas-menu.mini-navbar .navbar-default .nav>li>.nav-second-level li a {
     left: 0
 }
 
-body.canvas-menu.mini-navbar .navbar-default .nav>li>a,
-body.fixed-sidebar.mini-navbar .navbar-default .nav>li>a {
+body.canvas-menu.mini-navbar .navbar-default .nav > li > a,
+body.fixed-sidebar.mini-navbar .navbar-default .nav > li > a {
     font-size: 13px
 }
 
@@ -584,7 +598,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
     margin-left: 0
 }
 
-.top-navigation .navbar-nav .dropdown-menu>.active>a {
+.top-navigation .navbar-nav .dropdown-menu > .active > a {
     background: #fff;
     color: #3385FF;
     font-weight: 700
@@ -599,23 +613,23 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
     margin-bottom: 0
 }
 
-.top-navigation .nav>li>a {
+.top-navigation .nav > li > a {
     padding: 15px 20px;
     color: #676a6c
 }
 
-.top-navigation .nav>li a:focus,
-.top-navigation .nav>li a:hover {
+.top-navigation .nav > li a:focus,
+.top-navigation .nav > li a:hover {
     background: #fff;
     color: #3385FF
 }
 
-.top-navigation .nav>li.active {
+.top-navigation .nav > li.active {
     background: #fff;
     border: none
 }
 
-.top-navigation .nav>li.active>a {
+.top-navigation .nav > li.active > a {
     color: #3385FF
 }
 
@@ -636,7 +650,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15) inset
 }
 
-.top-navigation .dropdown-menu>li>a {
+.top-navigation .dropdown-menu > li > a {
     margin: 0;
     padding: 7px 20px
 }
@@ -681,7 +695,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 
 .top-navigation .footer.fixed {
-    margin-left: 0!important
+    margin-left: 0 !important
 }
 
 .top-navigation .wrapper.wrapper-content {
@@ -701,11 +715,11 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 
 .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header,
-.top-navigation .navbar-nav .open .dropdown-menu>li>a {
+.top-navigation .navbar-nav .open .dropdown-menu > li > a {
     padding: 10px 15px 10px 20px
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .top-navigation .navbar-header {
         display: block;
         float: none
@@ -714,25 +728,25 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 
 .menu-visible-lg,
 .menu-visible-md {
-    display: none!important
+    display: none !important
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .menu-visible-lg {
-        display: block!important
+        display: block !important
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .menu-visible-md {
-        display: block!important
+        display: block !important
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .menu-visible-lg,
     .menu-visible-md {
-        display: block!important
+        display: block !important
     }
 }
 
@@ -1142,7 +1156,7 @@ button.dim {
     cursor: pointer;
     border-radius: 5px;
     font-weight: 600;
-    margin-bottom: 20px!important
+    margin-bottom: 20px !important
 }
 
 button.dim:active {
@@ -1221,7 +1235,7 @@ button.dim:active:before {
 }
 
 .btn:focus {
-    outline: 0!important
+    outline: 0 !important
 }
 
 .label {
@@ -1297,7 +1311,7 @@ button.dim:active:before {
     border: 1px solid #CBD5DD;
     border-radius: 2px;
     cursor: text;
-    height: auto!important;
+    height: auto !important;
     margin: 0;
     min-height: 30px;
     overflow: hidden;
@@ -1319,12 +1333,12 @@ button.dim:active:before {
     position: relative
 }
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
     background-color: #f4f4f4;
     border-color: #DDD;
     color: inherit;
@@ -1332,8 +1346,8 @@ button.dim:active:before {
     z-index: 2
 }
 
-.pagination>li>a,
-.pagination>li>span {
+.pagination > li > a,
+.pagination > li > span {
     background-color: #FFF;
     border: 1px solid #DDD;
     color: inherit;
@@ -1491,7 +1505,7 @@ button.dim:active:before {
     width: auto
 }
 
-.chat-element>.pull-left {
+.chat-element > .pull-left {
     margin-right: 10px
 }
 
@@ -1519,7 +1533,7 @@ button.dim:active:before {
     margin: 10px 0
 }
 
-.right.chat-element>.pull-right {
+.right.chat-element > .pull-right {
     margin-left: 10px
 }
 
@@ -1617,7 +1631,7 @@ a.list-group-item.active:hover {
 .elements-list .list-group-item:first-child {
     border-left: none;
     border-right: none;
-    border-top: none!important
+    border-top: none !important
 }
 
 .elements-list .list-group {
@@ -1777,11 +1791,12 @@ div.dt-button-info {
     z-index: 100
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .html5buttons {
         float: none;
         margin-top: 10px
     }
+
     .dataTables_length {
         float: none
     }
@@ -1823,7 +1838,7 @@ div.dt-button-info {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #eee!important
+    background-color: #eee !important
 }
 
 .show-grid {
@@ -1930,8 +1945,8 @@ div.dt-button-info {
     font-size: 14px
 }
 
-.todo-list.small-list>li,
-.todo-list>li {
+.todo-list.small-list > li,
+.todo-list > li {
     background: #f3f3f4;
     margin-bottom: 2px;
     color: inherit
@@ -1941,14 +1956,14 @@ div.dt-button-info {
     font-size: 12px
 }
 
-.todo-list.small-list>li {
+.todo-list.small-list > li {
     border-left: none;
     border-right: none;
     border-radius: 4px;
     padding: 6px 6px 6px 12px
 }
 
-.todo-list.small-list .btn-group-xs>.btn,
+.todo-list.small-list .btn-group-xs > .btn,
 .todo-list.small-list .btn-xs {
     border-radius: 5px;
     font-size: 10px;
@@ -1956,7 +1971,7 @@ div.dt-button-info {
     padding: 1px 2px 1px 5px
 }
 
-.todo-list>li {
+.todo-list > li {
     border-left: 6px solid #e7eaec;
     border-right: 6px solid #e7eaec;
     border-radius: 4px;
@@ -1970,7 +1985,7 @@ div.dt-button-info {
     margin: 0 5px
 }
 
-.todo-list>li .label {
+.todo-list > li .label {
     font-size: 9px;
     margin-left: 10px
 }
@@ -1993,7 +2008,7 @@ div.dt-button-info {
 }
 
 .inline {
-    display: inline-block!important
+    display: inline-block !important
 }
 
 .input-s-sm {
@@ -2027,7 +2042,7 @@ div.dt-button-info {
 
 .form-control:focus,
 .single-line:focus {
-    border-color: #3385FF!important
+    border-color: #3385FF !important
 }
 
 .has-success .form-control {
@@ -2089,13 +2104,13 @@ div.dt-button-info {
 }
 
 .ui-sortable-placeholder {
-    border: 1px dashed #cecece!important;
-    visibility: visible!important;
+    border: 1px dashed #cecece !important;
+    visibility: visible !important;
     background: #e7eaec
 }
 
 .ibox.ui-sortable-placeholder {
-    margin: 0 0 23px!important
+    margin: 0 0 23px !important
 }
 
 .onoffswitch {
@@ -2177,11 +2192,11 @@ div.dt-button-info {
     transition: all .3s ease-in 0s
 }
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0
 }
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0
 }
 
@@ -2229,8 +2244,8 @@ div.dt-button-info {
 }
 
 .author-info,
-.dd-item>button,
-.dd-item>button:before,
+.dd-item > button,
+.dd-item > button:before,
 .forum-avatar,
 .forum-icon,
 .forum-info,
@@ -2262,9 +2277,9 @@ div.dt-button-info {
 }
 
 .ui-jqgrid tr.ui-search-toolbar th {
-    border-top-width: 0!important;
-    border-top-color: inherit!important;
-    border-top-style: ridge!important
+    border-top-width: 0 !important;
+    border-top-color: inherit !important;
+    border-top-style: ridge !important
 }
 
 .ui-state-focus,
@@ -2336,7 +2351,7 @@ div.dt-button-info {
     margin: 5px;
     font-weight: 700;
     display: none;
-    border-width: 2px!important;
+    border-width: 2px !important;
     font-size: 11px
 }
 
@@ -2406,15 +2421,15 @@ div.dt-button-info {
 }
 
 .ui-jqdialog .ui-jqdialog-title {
-    float: none!important
+    float: none !important
 }
 
-.ui-jqdialog>.ui-resizable-se {
+.ui-jqdialog > .ui-resizable-se {
     position: absolute
 }
 
 .dd,
-.dd-item>button,
+.dd-item > button,
 .dd-list {
     position: relative
 }
@@ -2468,7 +2483,7 @@ div.dt-button-info {
     font-weight: 700
 }
 
-.dd-item>button {
+.dd-item > button {
     display: block;
     cursor: pointer;
     float: left;
@@ -2485,7 +2500,7 @@ div.dt-button-info {
     font-weight: 700
 }
 
-.dd-item>button:before {
+.dd-item > button:before {
     content: '+';
     display: block;
     position: absolute;
@@ -2493,22 +2508,22 @@ div.dt-button-info {
     text-indent: 0
 }
 
-.dd-item>button[data-action=collapse]:before {
+.dd-item > button[data-action=collapse]:before {
     content: '-'
 }
 
-#nestable2 .dd-item>button {
+#nestable2 .dd-item > button {
     font-family: FontAwesome;
     height: 34px;
     width: 33px;
     color: #c1c1c1
 }
 
-#nestable2 .dd-item>button:before {
+#nestable2 .dd-item > button:before {
     content: "\f067"
 }
 
-#nestable2 .dd-item>button[data-action=collapse]:before {
+#nestable2 .dd-item > button[data-action=collapse]:before {
     content: "\f068"
 }
 
@@ -2540,7 +2555,7 @@ div.dt-button-info {
     pointer-events: none
 }
 
-.dd-dragel>.dd-item .dd-handle {
+.dd-dragel > .dd-item .dd-handle {
     margin-top: 0
 }
 
@@ -2657,11 +2672,11 @@ label.error {
     background-color: transparent
 }
 
-#toast-container>.toast {
-    background-image: none!important
+#toast-container > .toast {
+    background-image: none !important
 }
 
-#toast-container>.toast:before {
+#toast-container > .toast:before {
     position: fixed;
     font-family: FontAwesome;
     font-size: 24px;
@@ -2672,23 +2687,23 @@ label.error {
     margin: auto .5em auto -1.5em
 }
 
-#toast-container>.toast-warning:before {
+#toast-container > .toast-warning:before {
     content: "\f0e7"
 }
 
-#toast-container>.toast-error:before {
+#toast-container > .toast-error:before {
     content: "\f071"
 }
 
-#toast-container>.toast-info:before {
+#toast-container > .toast-info:before {
     content: "\f005"
 }
 
-#toast-container>.toast-success:before {
+#toast-container > .toast-success:before {
     content: "\f00C"
 }
 
-#toast-container>div {
+#toast-container > div {
     -moz-box-shadow: 0 0 3px #999;
     -webkit-box-shadow: 0 0 3px #999;
     box-shadow: 0 0 3px #999;
@@ -2697,7 +2712,7 @@ label.error {
     filter: alpha(opacity=90)
 }
 
-#toast-container>:hover {
+#toast-container > :hover {
     -moz-box-shadow: 0 0 4px #999;
     -webkit-box-shadow: 0 0 4px #999;
     box-shadow: 0 0 4px #999;
@@ -2805,7 +2820,7 @@ label.error {
     border: 1px solid #f1f1f1
 }
 
-.media-body>.media {
+.media-body > .media {
     background: #f9f9f9;
     border-radius: 3px;
     border: 1px solid #f1f1f1
@@ -2820,12 +2835,12 @@ label.error {
     border-radius: 3px
 }
 
-.media-body>.media .forum-avatar {
+.media-body > .media .forum-avatar {
     width: 70px;
     margin-right: 10px
 }
 
-.media-body>.media .forum-avatar .img-circle {
+.media-body > .media .forum-avatar .img-circle {
     height: 38px;
     width: 38px
 }
@@ -2848,7 +2863,7 @@ label.error {
 
 .forum-container,
 .forum-post-container {
-    padding: 30px!important
+    padding: 30px !important
 }
 
 .forum-item .forum-sub-title {
@@ -2888,13 +2903,14 @@ a.forum-item-title:hover {
     color: #3385FF
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .forum-info {
         margin: 15px 0 10px;
         display: none
     }
+
     .forum-desc {
-        float: none!important
+        float: none !important
     }
 }
 
@@ -2935,11 +2951,12 @@ a.forum-item-title:hover {
     background: #e7eaec
 }
 
-@media only screen and (min-width:1170px) {
+@media only screen and (min-width: 1170px) {
     #vertical-timeline.center-orientation {
         margin-top: 3em;
         margin-bottom: 3em
     }
+
     #vertical-timeline.center-orientation:before {
         left: 50%;
         margin-left: -2px
@@ -2965,13 +2982,15 @@ a.forum-item-title:hover {
     margin-bottom: 0
 }
 
-@media only screen and (min-width:1170px) {
+@media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-block {
         margin: 4em 0
     }
+
     .center-orientation .vertical-timeline-block:first-child {
         margin-top: 0
     }
+
     .center-orientation .vertical-timeline-block:last-child {
         margin-bottom: 0
     }
@@ -2999,7 +3018,7 @@ a.forum-item-title:hover {
     margin-top: -9px
 }
 
-@media only screen and (min-width:1170px) {
+@media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-icon {
         width: 50px;
         height: 50px;
@@ -3009,10 +3028,12 @@ a.forum-item-title:hover {
         -webkit-backface-visibility: hidden;
         font-size: 19px
     }
+
     .center-orientation .vertical-timeline-icon i {
         margin-left: -12px;
         margin-top: -10px
     }
+
     .center-orientation .cssanimations .vertical-timeline-icon.is-hidden {
         visibility: hidden
     }
@@ -3063,33 +3084,38 @@ a.forum-item-title:hover {
     border-right: 7px solid #fff
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
     .vertical-timeline-content h2 {
         font-size: 18px
     }
+
     .vertical-timeline-content p {
         font-size: 13px
     }
 }
 
-@media only screen and (min-width:1170px) {
+@media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-content {
         margin-left: 0;
         padding: 1.6em;
         width: 45%
     }
+
     .center-orientation .vertical-timeline-content::before {
         top: 24px;
         left: 100%;
         border-color: transparent transparent transparent #272727
     }
+
     .center-orientation .vertical-timeline-content .btn {
         float: left
     }
+
     .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content,
     .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .btn {
         float: right
     }
+
     .center-orientation .vertical-timeline-content .vertical-date {
         position: absolute;
         width: 100%;
@@ -3097,17 +3123,20 @@ a.forum-item-title:hover {
         top: 2px;
         font-size: 14px
     }
+
     .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content::before {
         top: 24px;
         left: auto;
         right: 100%;
         border-color: transparent #272727 transparent transparent
     }
+
     .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
         left: auto;
         right: 122%;
         text-align: right
     }
+
     .center-orientation .cssanimations .vertical-timeline-content.is-hidden {
         visibility: hidden
     }
@@ -3121,15 +3150,15 @@ a.forum-item-title:hover {
     position: relative
 }
 
-.tabs-container .nav-tabs>li.active>a,
-.tabs-container .nav-tabs>li.active>a:focus,
-.tabs-container .nav-tabs>li.active>a:hover {
+.tabs-container .nav-tabs > li.active > a,
+.tabs-container .nav-tabs > li.active > a:focus,
+.tabs-container .nav-tabs > li.active > a:hover {
     background-color: #fff;
     border: 1px solid #e7eaec;
     border-bottom-color: transparent
 }
 
-.tabs-container .nav-tabs>li {
+.tabs-container .nav-tabs > li {
     float: left;
     margin-bottom: -1px
 }
@@ -3147,19 +3176,19 @@ a.forum-item-title:hover {
     border-top: 1px solid #e7eaec
 }
 
-.tabs-container .nav-tabs>li a:hover {
+.tabs-container .nav-tabs > li a:hover {
     background: 0 0;
     border-color: transparent
 }
 
-.tabs-container .tabs-below>.nav-tabs,
-.tabs-container .tabs-left>.nav-tabs,
-.tabs-container .tabs-right>.nav-tabs {
+.tabs-container .tabs-below > .nav-tabs,
+.tabs-container .tabs-left > .nav-tabs,
+.tabs-container .tabs-right > .nav-tabs {
     border-bottom: 0
 }
 
-.tabs-container .tabs-left>.nav-tabs,
-.tabs-container .tabs-right>.nav-tabs {
+.tabs-container .tabs-left > .nav-tabs,
+.tabs-container .tabs-right > .nav-tabs {
     width: 20%
 }
 
@@ -3174,92 +3203,93 @@ a.forum-item-title:hover {
     margin-right: 20%
 }
 
-.tabs-container .pill-content>.pill-pane,
-.tabs-container .tab-content>.tab-pane {
+.tabs-container .pill-content > .pill-pane,
+.tabs-container .tab-content > .tab-pane {
     display: none
 }
 
-.tabs-container .pill-content>.active,
-.tabs-container .tab-content>.active {
+.tabs-container .pill-content > .active,
+.tabs-container .tab-content > .active {
     display: block
 }
 
-.tabs-container .tabs-below>.nav-tabs {
+.tabs-container .tabs-below > .nav-tabs {
     border-top: 1px solid #e7eaec
 }
 
-.tabs-container .tabs-below>.nav-tabs>li {
+.tabs-container .tabs-below > .nav-tabs > li {
     margin-top: -1px;
     margin-bottom: 0
 }
 
-.tabs-container .tabs-below>.nav-tabs>li>a {
+.tabs-container .tabs-below > .nav-tabs > li > a {
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px
 }
 
-.tabs-container .tabs-below>.nav-tabs>li>a:focus,
-.tabs-container .tabs-below>.nav-tabs>li>a:hover {
+.tabs-container .tabs-below > .nav-tabs > li > a:focus,
+.tabs-container .tabs-below > .nav-tabs > li > a:hover {
     border-top-color: #e7eaec;
     border-bottom-color: transparent
 }
 
-.tabs-container .tabs-left>.nav-tabs>li,
-.tabs-container .tabs-right>.nav-tabs>li {
+.tabs-container .tabs-left > .nav-tabs > li,
+.tabs-container .tabs-right > .nav-tabs > li {
     float: none
 }
 
-.tabs-container .tabs-left>.nav-tabs>li>a,
-.tabs-container .tabs-right>.nav-tabs>li>a {
+.tabs-container .tabs-left > .nav-tabs > li > a,
+.tabs-container .tabs-right > .nav-tabs > li > a {
     min-width: 74px;
     margin-right: 0;
     margin-bottom: 3px
 }
 
-.tabs-container .tabs-left>.nav-tabs {
+.tabs-container .tabs-left > .nav-tabs {
     float: left;
     margin-right: 19px
 }
 
-.tabs-container .tabs-left>.nav-tabs>li>a {
+.tabs-container .tabs-left > .nav-tabs > li > a {
     margin-right: -1px;
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px
 }
 
-.tabs-container .tabs-left>.nav-tabs .active>a,
-.tabs-container .tabs-left>.nav-tabs .active>a:focus,
-.tabs-container .tabs-left>.nav-tabs .active>a:hover {
+.tabs-container .tabs-left > .nav-tabs .active > a,
+.tabs-container .tabs-left > .nav-tabs .active > a:focus,
+.tabs-container .tabs-left > .nav-tabs .active > a:hover {
     border-color: #e7eaec transparent #e7eaec #e7eaec
 }
 
-.tabs-container .tabs-right>.nav-tabs {
+.tabs-container .tabs-right > .nav-tabs {
     float: right;
     margin-left: 19px
 }
 
-.tabs-container .tabs-right>.nav-tabs>li>a {
+.tabs-container .tabs-right > .nav-tabs > li > a {
     margin-left: -1px;
     -webkit-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     border-radius: 0 4px 4px 0
 }
 
-.tabs-container .tabs-right>.nav-tabs .active>a,
-.tabs-container .tabs-right>.nav-tabs .active>a:focus,
-.tabs-container .tabs-right>.nav-tabs .active>a:hover {
+.tabs-container .tabs-right > .nav-tabs .active > a,
+.tabs-container .tabs-right > .nav-tabs .active > a:focus,
+.tabs-container .tabs-right > .nav-tabs .active > a:hover {
     border-color: #e7eaec #e7eaec #e7eaec transparent;
     z-index: 1
 }
 
-@media (max-width:767px) {
-    .tabs-container .nav-tabs>li {
-        float: none!important
+@media (max-width: 767px) {
+    .tabs-container .nav-tabs > li {
+        float: none !important
     }
-    .tabs-container .nav-tabs>li.active>a {
-        border-bottom: 1px solid #e7eaec!important;
+
+    .tabs-container .nav-tabs > li.active > a {
+        border-bottom: 1px solid #e7eaec !important;
         margin: 0
     }
 }
@@ -3400,7 +3430,7 @@ a.forum-item-title:hover {
 
 .slick-next:before,
 .slick-prev:before {
-    color: #3385FF!important
+    color: #3385FF !important
 }
 
 .payment-card {
@@ -3415,7 +3445,7 @@ a.forum-item-title:hover {
     color: #d1dade
 }
 
-.payments-method.panel-group .panel+.panel {
+.payments-method.panel-group .panel + .panel {
     margin-top: -1px
 }
 
@@ -3480,7 +3510,7 @@ body.tour-open .animated {
     background: rgba(211, 211, 211, .4)
 }
 
-.wizard>.content>.body {
+.wizard > .content > .body {
     position: relative
 }
 
@@ -3526,12 +3556,12 @@ body.tour-open .animated {
 
 .sidebar-content .wrapper,
 .wrapper.sidebar-content {
-    padding-right: 230px!important
+    padding-right: 230px !important
 }
 
 .body-small .sidebar-content .wrapper,
 .body-small .wrapper.sidebar-content {
-    padding-right: 20px!important
+    padding-right: 20px !important
 }
 
 #right-sidebar {
@@ -3540,7 +3570,7 @@ body.tour-open .animated {
     overflow: hidden;
     position: fixed;
     top: 60px;
-    width: 260px!important;
+    width: 260px !important;
     z-index: 1009;
     right: -260px
 }
@@ -3589,14 +3619,14 @@ body.tour-open .animated {
     font-weight: 700
 }
 
-.sidebar-container .sidebar-message>a,
+.sidebar-container .sidebar-message > a,
 .sidebar-container ul.sidebar-list li a {
     color: inherit;
     text-decoration: none
 }
 
-.sidebar-container .nav-tabs>li.active>a:focus,
-.sidebar-container .nav-tabs>li.active>a:hover {
+.sidebar-container .nav-tabs > li.active > a:focus,
+.sidebar-container .nav-tabs > li.active > a:hover {
     border: none
 }
 
@@ -3636,7 +3666,7 @@ body.tour-open .animated {
     margin-bottom: 5px
 }
 
-.sidebar-container .sidebar-message>a>.pull-left {
+.sidebar-container .sidebar-message > a > .pull-left {
     margin-right: 10px
 }
 
@@ -3684,7 +3714,7 @@ body.boxed-layout #wrapper {
 
 .boxed-layout #wrapper.top-navigation,
 .top-navigation.boxed-layout #wrapper {
-    max-width: 1300px!important
+    max-width: 1300px !important
 }
 
 .clear {
@@ -3702,7 +3732,7 @@ a:hover {
 }
 
 .border-bottom {
-    border-bottom: 1px solid #e7eaec!important
+    border-bottom: 1px solid #e7eaec !important
 }
 
 .font-bold {
@@ -3727,10 +3757,10 @@ a:hover {
 
 .note-editor,
 video {
-    height: auto!important
+    height: auto !important
 }
 
-.gallery>.row>div,
+.gallery > .row > div,
 .hr-line-solid {
     margin-bottom: 15px
 }
@@ -3738,12 +3768,12 @@ video {
 .hr-line-solid {
     border-bottom: 1px solid #e7eaec;
     background-color: rgba(0, 0, 0, 0);
-    border-style: solid!important;
+    border-style: solid !important;
     margin-top: 15px
 }
 
 video {
-    width: 100%!important
+    width: 100% !important
 }
 
 .fancybox img {
@@ -3821,10 +3851,10 @@ video {
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
-    position: relative!important
+    position: relative !important
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #page-wrapper {
         position: inherit;
         margin: 0 0 0 240px;
@@ -3857,7 +3887,7 @@ ul.unstyled {
 }
 
 .big-icon {
-    font-size: 160px!important;
+    font-size: 160px !important;
     color: #e5e6e7
 }
 
@@ -3897,7 +3927,7 @@ body.mini-navbar .footer.fixed {
 
 body.canvas-menu .footer.fixed,
 body.mini-navbar.canvas-menu .footer.fixed {
-    margin: 0!important
+    margin: 0 !important
 }
 
 body.fixed-sidebar.body-small.mini-navbar .footer.fixed {
@@ -3922,30 +3952,30 @@ body.body-small .footer.fixed {
     border: 1px solid #EBEBEB
 }
 
-.table-bordered>thead>tr>td,
-.table-bordered>thead>tr>th {
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
     background-color: #F5F5F6
 }
 
-.table-bordered>tbody>tr>td,
-.table-bordered>tbody>tr>th,
-.table-bordered>tfoot>tr>td,
-.table-bordered>tfoot>tr>th,
-.table-bordered>thead>tr>td,
-.table-bordered>thead>tr>th {
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
     border: 1px solid #e7e7e7
 }
 
-.table>thead>tr>th {
+.table > thead > tr > th {
     border-bottom: 1px solid #DDD
 }
 
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
     border-top: 1px solid #e7eaec;
     line-height: 1.42857;
     padding: 8px;
@@ -3961,9 +3991,9 @@ body.body-small .footer.fixed {
     padding-bottom: 0
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -3983,14 +4013,14 @@ body.body-small .footer.fixed {
     border: none
 }
 
-.nav-tabs>li>a {
+.nav-tabs > li > a {
     color: #A7B1C2;
     font-weight: 600;
     padding: 10px 20px 10px 25px
 }
 
-.nav-tabs>li>a:focus,
-.nav-tabs>li>a:hover {
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
     background-color: #e6e6e6;
     color: #676a6c
 }
@@ -4000,19 +4030,19 @@ body.body-small .footer.fixed {
 }
 
 .no-padding {
-    padding: 0!important
+    padding: 0 !important
 }
 
 .no-borders {
-    border: none!important
+    border: none !important
 }
 
 .no-margins {
-    margin: 0!important
+    margin: 0 !important
 }
 
 .no-top-border {
-    border-top: 0!important
+    border-top: 0 !important
 }
 
 .border-left,
@@ -4043,7 +4073,7 @@ body.body-small .footer.fixed {
 }
 
 .full-width {
-    width: 100%!important
+    width: 100% !important
 }
 
 .link-block {
@@ -4106,8 +4136,8 @@ img.circle-border {
     margin-bottom: 0
 }
 
-.breadcrumb>.active,
-.breadcrumb>li a {
+.breadcrumb > .active,
+.breadcrumb > li a {
     color: inherit
 }
 
@@ -4261,12 +4291,12 @@ ul.notes li {
     color: #fff
 }
 
-.ibox-tools .dropdown-menu>li>a {
+.ibox-tools .dropdown-menu > li > a {
     padding: 4px 10px;
     font-size: 12px
 }
 
-.ibox .ibox-tools.open>.dropdown-menu {
+.ibox .ibox-tools.open > .dropdown-menu {
     left: auto;
     right: 0
 }
@@ -4312,7 +4342,7 @@ ul.notes li {
     border-color: #3385FF
 }
 
-.panel-primary>.panel-heading {
+.panel-primary > .panel-heading {
     background-color: #3385FF;
     border-color: #3385FF
 }
@@ -4321,7 +4351,7 @@ ul.notes li {
     border-color: #1c84c6
 }
 
-.panel-success>.panel-heading {
+.panel-success > .panel-heading {
     background-color: #1c84c6;
     border-color: #1c84c6;
     color: #fff
@@ -4331,7 +4361,7 @@ ul.notes li {
     border-color: #23c6c8
 }
 
-.panel-info>.panel-heading {
+.panel-info > .panel-heading {
     background-color: #23c6c8;
     border-color: #23c6c8;
     color: #fff
@@ -4341,7 +4371,7 @@ ul.notes li {
     border-color: #f8ac59
 }
 
-.panel-warning>.panel-heading {
+.panel-warning > .panel-heading {
     background-color: #f8ac59;
     border-color: #f8ac59;
     color: #fff
@@ -4351,7 +4381,7 @@ ul.notes li {
     border-color: #ed5565
 }
 
-.panel-danger>.panel-heading {
+.panel-danger > .panel-heading {
     background-color: #ed5565;
     border-color: #ed5565;
     color: #fff
@@ -4476,7 +4506,7 @@ ul.notes li {
 }
 
 .contact-box,
-.contact-box.center-version>a,
+.contact-box.center-version > a,
 .light-navbar .navbar.navbar-static-top {
     background-color: #fff
 }
@@ -4531,11 +4561,11 @@ a.close-canvas-menu:hover {
 }
 
 .modal-backdrop {
-    z-index: 2040!important
+    z-index: 2040 !important
 }
 
 .modal {
-    z-index: 2050!important
+    z-index: 2050 !important
 }
 
 .spiner-example {
@@ -4624,7 +4654,7 @@ a.close-canvas-menu:hover {
 }
 
 .m-n {
-    margin: 0!important
+    margin: 0 !important
 }
 
 .m-l-none {
@@ -4913,7 +4943,7 @@ body.fullscreen-ibox-mode {
 }
 
 body.modal-open {
-    padding-right: inherit!important
+    padding-right: inherit !important
 }
 
 body.modal-open .animated {
@@ -4923,7 +4953,7 @@ body.modal-open .animated {
 
 .block,
 body.mini-navbar.fixed-sidebar .profile-element {
-    display: block!important
+    display: block !important
 }
 
 body.mini-navbar.fixed-sidebar .nav-header {
@@ -4962,7 +4992,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
     margin-bottom: 20px
 }
 
-.contact-box>a {
+.contact-box > a {
     color: inherit
 }
 
@@ -4971,13 +5001,13 @@ body.mini-navbar.fixed-sidebar .logo-element {
     padding: 0
 }
 
-.contact-box.center-version>a {
+.contact-box.center-version > a {
     display: block;
     padding: 20px;
     text-align: center
 }
 
-.contact-box.center-version>a img {
+.contact-box.center-version > a img {
     width: 80px;
     height: 80px;
     margin-top: 10px;
@@ -4995,23 +5025,23 @@ body.mini-navbar.fixed-sidebar .logo-element {
     padding: 15px 20px
 }
 
-.invoice-table tbody>tr>td:last-child,
-.invoice-table tbody>tr>td:nth-child(2),
-.invoice-table tbody>tr>td:nth-child(3),
-.invoice-table tbody>tr>td:nth-child(4),
-.invoice-table thead>tr>th:last-child,
-.invoice-table thead>tr>th:nth-child(2),
-.invoice-table thead>tr>th:nth-child(3),
-.invoice-table thead>tr>th:nth-child(4),
-.invoice-total>tbody>tr>td:first-child {
+.invoice-table tbody > tr > td:last-child,
+.invoice-table tbody > tr > td:nth-child(2),
+.invoice-table tbody > tr > td:nth-child(3),
+.invoice-table tbody > tr > td:nth-child(4),
+.invoice-table thead > tr > th:last-child,
+.invoice-table thead > tr > th:nth-child(2),
+.invoice-table thead > tr > th:nth-child(3),
+.invoice-table thead > tr > th:nth-child(4),
+.invoice-total > tbody > tr > td:first-child {
     text-align: right
 }
 
-.invoice-total>tbody>tr>td {
+.invoice-total > tbody > tr > td {
     border: 0
 }
 
-.invoice-total>tbody>tr>td:last-child {
+.invoice-total > tbody > tr > td:last-child {
     border-bottom: 1px solid #DDD;
     text-align: right;
     width: 15%
@@ -5098,7 +5128,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
 }
 
 .fist-item {
-    border-top: none!important
+    border-top: none !important
 }
 
 .statistic-box {
@@ -5124,7 +5154,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
 }
 
 ul.clear-list:first-child {
-    border-top: none!important
+    border-top: none !important
 }
 
 .timeline-item .date i {
@@ -5332,7 +5362,7 @@ ul.notes li div:hover {
     margin: 15px 0
 }
 
-.feed-element>.pull-left,
+.feed-element > .pull-left,
 .file-control,
 .profile-stats {
     margin-right: 10px
@@ -5406,7 +5436,7 @@ a.compose-mail {
 }
 
 .profile-content {
-    border-top: none!important
+    border-top: none !important
 }
 
 .profile-image {
@@ -5638,7 +5668,7 @@ dd.project-people {
 }
 
 .message-input {
-    height: 90px!important
+    height: 90px !important
 }
 
 .chat-avatar {
@@ -5668,7 +5698,7 @@ dd.project-people {
     margin-left: -30px
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .chat-statistic,
     .chat-users {
         margin-left: 0
@@ -5748,7 +5778,7 @@ dd.project-people {
     margin-bottom: 0
 }
 
-.jstree-open>.jstree-anchor>.fa-folder:before {
+.jstree-open > .jstree-anchor > .fa-folder:before {
     content: "\f07c"
 }
 
@@ -5808,9 +5838,9 @@ dd.project-people {
     color: #a7aaab
 }
 
-.clients-list .nav-tabs>li.active>a,
-.clients-list .nav-tabs>li.active>a:focus,
-.clients-list .nav-tabs>li.active>a:hover {
+.clients-list .nav-tabs > li.active > a,
+.clients-list .nav-tabs > li.active > a:focus,
+.clients-list .nav-tabs > li.active > a:hover {
     border-bottom: 1px solid #fff
 }
 
@@ -6282,7 +6312,7 @@ body.body-small .vote-icon {
     font-size: 11px
 }
 
-.small-chat-box .content>div {
+.small-chat-box .content > div {
     padding-bottom: 20px
 }
 
@@ -6334,7 +6364,7 @@ body.body-small .vote-icon {
     content: "\e079"
 }
 
-.metismenu .active>a>.glyphicon.arrow:before {
+.metismenu .active > a > .glyphicon.arrow:before {
     content: "\e114"
 }
 
@@ -6342,7 +6372,7 @@ body.body-small .vote-icon {
     content: "\f104"
 }
 
-.metismenu .active>a>.fa.arrow:before {
+.metismenu .active > a > .fa.arrow:before {
     content: "\f107"
 }
 
@@ -6350,7 +6380,7 @@ body.body-small .vote-icon {
     content: "\f3d2"
 }
 
-.metismenu .active>a>.ion.arrow:before {
+.metismenu .active > a > .ion.arrow:before {
     content: "\f3d0"
 }
 
@@ -6359,13 +6389,13 @@ body.body-small .vote-icon {
     content: "\f067"
 }
 
-.metismenu .active>a>.fa.plus-times {
+.metismenu .active > a > .fa.plus-times {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg)
 }
 
-.metismenu .active>a>.fa.plus-minus:before {
+.metismenu .active > a > .fa.plus-minus:before {
     content: "\f068"
 }
 
@@ -7298,7 +7328,7 @@ body.landing-page {
     z-index: 200
 }
 
-.landing-page .navbar-wrapper>.container {
+.landing-page .navbar-wrapper > .container {
     padding-right: 0;
     padding-left: 0
 }
@@ -7328,30 +7358,30 @@ body.landing-page {
     font-size: 14px
 }
 
-.landing-page .navbar-nav>li>a {
+.landing-page .navbar-nav > li > a {
     padding-top: 25px;
     border-top: 6px solid transparent
 }
 
-.landing-page .navbar-default .navbar-nav>.active>a,
-.landing-page .navbar-default .navbar-nav>.active>a:hover {
+.landing-page .navbar-default .navbar-nav > .active > a,
+.landing-page .navbar-default .navbar-nav > .active > a:hover {
     background: 0 0;
     color: #fff;
     border-top: 6px solid #3385FF
 }
 
-.landing-page .navbar-default .navbar-nav>li>a:focus,
-.landing-page .navbar-default .navbar-nav>li>a:hover {
+.landing-page .navbar-default .navbar-nav > li > a:focus,
+.landing-page .navbar-default .navbar-nav > li > a:hover {
     color: #3385FF;
     background: inherit
 }
 
-.landing-page .navbar-default .navbar-nav>.active>a:focus {
+.landing-page .navbar-default .navbar-nav > .active > a:focus {
     background: 0 0;
     color: #fff
 }
 
-.landing-page .navbar-default.navbar-scroll .navbar-nav>.active>a:focus {
+.landing-page .navbar-default.navbar-scroll .navbar-nav > .active > a:focus {
     background: 0 0;
     color: inherit
 }
@@ -7389,25 +7419,25 @@ body.landing-page {
     border-radius: 0
 }
 
-.landing-page .nav>li.active {
+.landing-page .nav > li.active {
     border: none;
     background: inherit
 }
 
-.landing-page .nav>li>a {
+.landing-page .nav > li > a {
     padding: 25px 10px 15px
 }
 
-.landing-page .navbar-scroll .navbar-nav>li>a {
+.landing-page .navbar-scroll .navbar-nav > li > a {
     padding: 20px 10px
 }
 
 .landing-page .navbar-fixed-top {
-    border: none!important
+    border: none !important
 }
 
 .landing-page .navbar-fixed-top.navbar-scroll {
-    border-bottom: 1px solid #e7eaec!important
+    border-bottom: 1px solid #e7eaec !important
 }
 
 .landing-page .navbar.navbar-scroll .navbar-brand {
@@ -7444,7 +7474,7 @@ body.landing-page {
     background-color: #777
 }
 
-.landing-page .carousel-inner>.item>img {
+.landing-page .carousel-inner > .item > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -7592,19 +7622,26 @@ body.landing-page {
     margin: auto
 }
 
+.landing-page .about {
+    padding-top: 6em;
+    background-color: #272727;
+    height: 52em;
+}
+
+.landing-page .career {
+    height: 72em;
+}
+
 .landing-page .skills {
     background-color: #ffffff;
-    height: 100%;
+    height: 46em;
 }
 
 .landing-page .projects {
-    height: 100%;
+    height: 46em;
 }
 
-.landing-page .about {
-    margin-top: 10%;
-    background-color: #272727;
-    height: 100%;
+.landing-page .thanks {
 }
 
 .landing-page .social-icon a {
@@ -7677,18 +7714,11 @@ body.landing-page {
 }
 
 .landing-page .big-icon {
-    font-size: 56px!important
+    font-size: 56px !important
 }
 
 .landing-page .features .big-icon {
-    color: #3385FF!important
-}
-
-.landing-page .thanks {
-    background-image: url(../img/landing/word_map.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    height: 92%;
+    color: #3385FF !important
 }
 
 .landing-page section.timeline {
@@ -7784,74 +7814,88 @@ body.landing-page {
     border-color: #1dc5a3
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .landing-page .navbar-wrapper {
         margin-top: 20px
     }
+
     .landing-page .navbar-wrapper .container {
         padding-right: 15px;
         padding-left: 15px
     }
+
     .landing-page .navbar-wrapper .navbar {
         padding-right: 0;
         padding-left: 0;
         border-radius: 4px
     }
+
     .landing-page .carousel-caption p {
         margin-bottom: 20px;
         font-size: 14px;
         line-height: 1.4
     }
+
     .landing-page .featurette-heading {
         font-size: 50px
     }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .landing-page .carousel-image {
         display: none
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .landing-page .carousel-caption,
     .landing-page .carousel-caption.blank {
         left: 5%;
         top: 80px
     }
+
     .landing-page .carousel-caption h1 {
         font-size: 28px
     }
+
     .landing-page .navbar.navbar-scroll .navbar-brand {
         margin-top: 6px
     }
+
     .landing-page .navbar-default {
         background-color: #fff;
         border-color: #fff;
         padding: 15px 0
     }
-    .landing-page .navbar-default .navbar-nav>.active>a:focus {
+
+    .landing-page .navbar-default .navbar-nav > .active > a:focus {
         background: 0 0;
         color: inherit
     }
+
     .landing-page .navbar-default .nav li a {
         color: #676a6c
     }
+
     .landing-page .navbar-default .nav li a:hover {
         color: #3385FF
     }
+
     .landing-page .navbar-wrapper .navbar {
         padding-top: 0;
         padding-bottom: 5px;
         border-bottom: 1px solid #e7eaec;
         border-radius: 0
     }
-    .landing-page .nav>li>a {
+
+    .landing-page .nav > li > a {
         padding: 25px 10px 15px
     }
-    .landing-page .navbar-nav>li>a {
+
+    .landing-page .navbar-nav > li > a {
         padding: 20px 10px
     }
+
     .landing-page .navbar .navbar-brand {
         margin-top: 6px;
         border-radius: 5px;
@@ -7859,21 +7903,26 @@ body.landing-page {
         padding: 10px;
         height: auto
     }
+
     .landing-page .navbar-wrapper .navbar {
         padding-left: 15px;
         padding-right: 5px
     }
-    .landing-page .navbar-default .navbar-nav>.active>a,
-    .landing-page .navbar-default .navbar-nav>.active>a:hover {
+
+    .landing-page .navbar-default .navbar-nav > .active > a,
+    .landing-page .navbar-default .navbar-nav > .active > a:hover {
         color: inherit
     }
+
     .landing-page .carousel-control {
         display: none
     }
+
     .landing-page .navbar .navbar-header {
         display: block;
         float: none
     }
+
     .landing-page .navbar .navbar-header .navbar-toggle {
         background-color: #fff;
         padding: 9px 10px;
@@ -7887,7 +7936,7 @@ body.rtls .timeline-item .date i {
     right: auto
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .landing-page .featurette-heading {
         margin-top: 120px
     }
@@ -7906,11 +7955,11 @@ body.rtls .ibox-title h5 {
 }
 
 body.rtls .pull-right {
-    float: left!important
+    float: left !important
 }
 
 body.rtls .pull-left {
-    float: right!important
+    float: right !important
 }
 
 body.rtls .ibox-tools,
@@ -7919,7 +7968,7 @@ body.rtls .stat-percent {
 }
 
 body.rtls .navbar-right {
-    float: left!important
+    float: left !important
 }
 
 body.rtls .navbar-top-links li:last-child {
@@ -7931,7 +7980,7 @@ body.rtls .minimalize-styl-2 {
     margin: 14px 20px 5px 5px
 }
 
-body.rtls .feed-element>.pull-left {
+body.rtls .feed-element > .pull-left {
     margin-left: 10px;
     margin-right: 0
 }
@@ -7949,17 +7998,17 @@ body.rtls .toast-close-button {
     float: left
 }
 
-body.rtls .dd-item>button,
+body.rtls .dd-item > button,
 body.rtls .file-box,
 body.rtls ul.notes li {
     float: right
 }
 
-body.rtls #toast-container>.toast:before {
+body.rtls #toast-container > .toast:before {
     margin: auto -1.5em auto .5em
 }
 
-body.rtls #toast-container>div {
+body.rtls #toast-container > div {
     padding: 15px 50px 15px 15px
 }
 
@@ -7981,7 +8030,7 @@ body.rtls .chat-users {
     margin-left: auto
 }
 
-body.rtls .dropdown-menu>li>a {
+body.rtls .dropdown-menu > li > a {
     text-align: right
 }
 
@@ -8022,7 +8071,7 @@ body.rtls .footer.fixed {
     margin-left: 0
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     body.rtls .chat-statistic,
     body.rtls .chat-users {
         margin-right: 0
@@ -8089,30 +8138,35 @@ body.rtls.top-navigation .footer.fixed {
     margin: 0
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     body.rtls .navbar-top-links li:last-child {
         margin-left: 20px
     }
+
     .body-small.rtls #page-wrapper {
         position: inherit;
         margin: 0;
         min-height: 1000px
     }
+
     .body-small.rtls .navbar-static-side {
         display: none;
         z-index: 2001;
         position: absolute;
         width: 70px
     }
+
     .body-small.rtls.mini-navbar .navbar-static-side {
         display: block
     }
+
     .rtls.fixed-sidebar.body-small .navbar-static-side {
         display: none;
         z-index: 2001;
         position: fixed;
         width: 220px
     }
+
     .rtls.fixed-sidebar.body-small.mini-navbar .navbar-static-side {
         display: block
     }
