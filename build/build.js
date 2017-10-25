@@ -35,7 +35,7 @@ function compressjs(pagename, filename, filelist) {
             if_return: true,
             join_vars: true,
             drop_console: true
-        },
+        }
     });
 
     fs.writeFileSync('static/assets/' + filename, result.code);
@@ -49,20 +49,20 @@ function compresscss(pagename, filename, filelist) {
     var output = new CleanCSS({
         level: {
             1: {
-                transform: function(propertyName, propertyValue) {
-                    if (propertyName == 'src' && propertyValue.indexOf('node_modules/bootstrap/dist/') > -1) {
+                transform: function (propertyName, propertyValue) {
+                    if (propertyName === 'src' && propertyValue.indexOf('node_modules/bootstrap/dist/') > -1) {
                         return propertyValue.replace('node_modules/bootstrap/dist/', '');
                     }
-                    if (propertyName == 'src' && propertyValue.indexOf('node_modules/components-font-awesome/') > -1) {
+                    if (propertyName === 'src' && propertyValue.indexOf('node_modules/components-font-awesome/') > -1) {
                         return propertyValue.replace('node_modules/components-font-awesome/', '');
                     }
-                    if (propertyName == 'src' && propertyValue.indexOf('node_modules/font-mfizz/dist/') > -1) {
+                    if (propertyName === 'src' && propertyValue.indexOf('node_modules/font-mfizz/dist/') > -1) {
                         return propertyValue.replace('node_modules/font-mfizz/dist/', '');
                     }
-                    if (propertyName == 'background' && propertyValue.indexOf('static/img/') > -1) {
+                    if (propertyName === 'background' && propertyValue.indexOf('static/img/') > -1) {
                         return propertyValue.replace('static/', '');
                     }
-                    if (propertyName == 'background-image' && propertyValue.indexOf('static/img/') > -1) {
+                    if (propertyName === 'background-image' && propertyValue.indexOf('static/img/') > -1) {
                         return propertyValue.replace('static/', '');
                     }
                 }
@@ -74,13 +74,14 @@ function compresscss(pagename, filename, filelist) {
     console.log(pagename.green + " css files compress succeed. You can find it at \"static/assets\".\n".green);
 }
 
-for (i = 0; i < CSSJSfiles.length; i++) {
-    if (CSSJSfiles[i].type == 'css') {
-        var filename = CSSJSfiles[i].prefix + nowDateStr + '.min.css'
+for (var i = 0; i < CSSJSfiles.length; i++) {
+    var filename;
+    if (CSSJSfiles[i].type === 'css') {
+        filename = CSSJSfiles[i].prefix + nowDateStr + '.min.css';
         compresscss(CSSJSfiles[i].name, filename, CSSJSfiles[i].list)
     }
-    if (CSSJSfiles[i].type == 'js') {
-        var filename = CSSJSfiles[i].prefix + nowDateStr + '.min.js'
+    if (CSSJSfiles[i].type === 'js') {
+        filename = CSSJSfiles[i].prefix + nowDateStr + '.min.js';
         compressjs(CSSJSfiles[i].name, filename, CSSJSfiles[i].list)
     }
 }

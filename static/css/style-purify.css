@@ -100,14 +100,6 @@ code {
   color: #DFE4ED;
 }
 
-.count-info .label {
-  line-height: 12px;
-  padding: 2px 5px;
-  position: absolute;
-  right: 6px;
-  top: 12px;
-}
-
 .navbar-default .landing_link a {
   background: #3385FF;
   color: #fff;
@@ -693,7 +685,7 @@ a:focus,a:hover {
 }
 
 .wrapper-content {
-  padding: 20px 10px 40px;
+  padding: 60px 10px 40px 10px;
 }
 
 #page-wrapper {
@@ -1148,7 +1140,7 @@ code {
   margin-bottom: 15px;
 }
 
-.social-comment .social-comment,.vote-info,.vote-title {
+.vote-info,.vote-title {
   margin-left: 45px;
 }
 
@@ -1170,25 +1162,15 @@ code {
   margin-bottom: 10px;
 }
 
-.social-comment:first-child {
-  margin-top: 0;
-}
-
-.social-comment {
-  margin-top: 15px;
-}
-
 .vote-item {
   padding: 20px 25px;
   background: #fff;
+  transition: all 200ms linear;
+  transition-delay: 0s;
 }
 
 .vote-item:last-child {
   border-bottom: 1px solid #e7eaec;
-}
-
-.vote-title,.vote-title:focus,.vote-title:hover {
-  color: inherit;
 }
 
 .vote-title {
@@ -1201,6 +1183,9 @@ code {
 .vote-info,.vote-info a {
   color: #b4b6b8;
   font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 0;
 }
 
 .vote-info a {
@@ -1798,22 +1783,6 @@ body.landing-page {
   padding-bottom: 30px;
 }
 
-.landing-page section.comments {
-  padding-bottom: 80px;
-}
-
-.landing-page .comments-avatar {
-  margin-top: 25px;
-  margin-left: 22px;
-}
-
-.landing-page .comments-avatar img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
 .landing-page .btn-primary,.landing-page .btn-primary.active,.landing-page .btn-primary:active,.landing-page .btn-primary:focus,.landing-page .btn-primary:hover {
   background-color: #3385FF;
   border-color: #3385FF;
@@ -1939,7 +1908,10 @@ body.blog-page {
 }
 
 .vote-item:hover {
-  background: #fbfbfb;
+  background: #3c3c3c;
+}
+
+.vote-item:hover .vote-title {
   color: gold;
 }
 

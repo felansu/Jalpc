@@ -3843,7 +3843,7 @@ video {
 }
 
 .wrapper-content {
-    padding: 20px 10px 40px
+    padding: 60px 10px 40px 10px;
 }
 
 #page-wrapper {
@@ -6163,7 +6163,9 @@ table.shoping-cart-table tr td:last-child {
 
 .vote-item {
     padding: 20px 25px;
-    background: #fff
+    background: #fff;
+    transition: all 200ms linear;
+    transition-delay: 0s;
 }
 
 .vote-item:last-child {
@@ -6183,23 +6185,20 @@ table.shoping-cart-table tr td:last-child {
     font-weight: 600
 }
 
-.vote-title,
-.vote-title:focus,
-.vote-title:hover {
-    color: inherit
-}
-
 .vote-title {
     font-size: 18px;
     font-weight: 600;
     margin-top: 5px;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 .vote-info,
 .vote-info a {
     color: #b4b6b8;
-    font-size: 12px
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 0;
 }
 
 .vote-info a {
@@ -7958,7 +7957,13 @@ body.blog-page {
 }
 
 .vote-item:hover {
-    background: #fbfbfb;
+    background: #3c3c3c;
+
+}
+
+.vote-item:hover .vote-title {
+    color: gold;
+
 }
 
 .blog-page .blog-content .blog-item:last-child {
