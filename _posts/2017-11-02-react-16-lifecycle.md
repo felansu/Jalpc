@@ -5,7 +5,7 @@ date:   2017-11-01
 keywords: "react, lifecycle"
 categories: [React]
 tags: [React, React Lifecycle]
-icon: icon-react
+icon: icon-reactjs
       
 ---
 
