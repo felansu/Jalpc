@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "React 16 Lifecycle"
-date:   2017-11-01
+date:   2017-11-02
 keywords: "react, lifecycle"
 categories: [React]
 tags: [React, React Lifecycle]
