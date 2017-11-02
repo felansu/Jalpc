@@ -7272,8 +7272,9 @@ body.landing-page {
     color: #3385ff;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     background-color: #272727;
+    height: 100vh;
 }
-
+/*display: block; height: 75vh;*/
 .landing-page span.navy {
     color: #3385FF
 }
