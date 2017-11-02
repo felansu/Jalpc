@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Method Chaining Pattern with JavaScript"
+title:  "Method Chaining Pattern with Javascript"
 date:   2017-11-01
 keywords: "javascript, design patterns"
 categories: [Design Patterns]
