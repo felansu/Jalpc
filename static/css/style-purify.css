@@ -1533,6 +1533,8 @@ body.landing-page {
   height: 100vh;
 }
 
+/*display: block; height: 75vh;*/
+
 .landing-page span.navy {
   color: #3385FF;
 }
@@ -1918,4 +1920,9 @@ body.blog-page {
 
 .blog-page .blog-content .blog-item:last-child {
   border-bottom: 1px solid #e7eaec;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }

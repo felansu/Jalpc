@@ -7970,3 +7970,8 @@ body.blog-page {
 .blog-page .blog-content .blog-item:last-child {
     border-bottom: 1px solid #e7eaec;
 }
+
+img{
+        display: block;
+        margin: 0 auto;
+}
